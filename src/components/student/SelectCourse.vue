@@ -113,6 +113,7 @@ export default {
                 'method':'setCourse',
                 'cla_id': this.tableData[this.idx].c_id
             }).then(resp => {
+                console.log(resp)
                 var data = resp.data
                 if (data.code == 200) {
                     this.$message.success(data.message)
